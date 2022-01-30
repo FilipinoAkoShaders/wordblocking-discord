@@ -7,6 +7,9 @@
 
 <h3 align=center>Block Words On Your Discord Server With This NPM Package</h3>
 
+## GITHUB
+[Check Our Github Link Here](https://github.com/FilipinoAkoShaders/wordblocking-discord/)
+
 ## INSTALLATION
 ```npm install wordblocking-discord```
 or
