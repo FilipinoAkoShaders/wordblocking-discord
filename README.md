@@ -33,7 +33,7 @@ uptime(): if your on replit you might need this
 
 ## TEMPLATE
 • index.js:
-```
+```js
 const app = require('wordblocking-discord')
 const config = require('./config.json')
 
