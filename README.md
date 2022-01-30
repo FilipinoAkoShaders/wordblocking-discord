@@ -14,7 +14,7 @@ or
 
 ## FUNCTIONS
 heres the functions bellow
-```
+```js
 token('YourBotToken'): The Bot Token
 activity('YourBotActivity'): The Bot Activity
 words(): Your Words List That Gonna Be Blocked *this needs config.json so scroll down for the template*
@@ -46,7 +46,7 @@ app.start()
 app.uptime()
 ```
 • config.json:
-```
+```json
 {
   "token": "YourBotToken",
   "activity": "YourBotActivity",
