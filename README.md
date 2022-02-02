@@ -48,7 +48,40 @@ app.wordblocker({
 })
 ```
 4. Fill Out The Needed Values
-5. Now Run ```node index.js``` on the terminal or console
+5. Start The Project With ```.start()``` function so the code will be
+```js
+const app = require('wordblocking-discord')
+
+app.wordblocker({
+   bot_token: 'Your Bot Token Here',
+   bot_activity: 'Your Bot Activity Here',
+   bot_activity_type: 'Bot Activity Type Here',
+   word_list: ["words here", "Words Here"], // any words available
+   word_warn: 'Your Word Warn Here',
+   word_warn_type: Warn Type Here,
+   uptime_port: Your Uptime Port Here
+})
+
+app.start()
+```
+6. If You Want To Run The Uptime Website Add ```.uptime()``` so the code will be
+```js
+const app = require('wordblocking-discord')
+
+app.wordblocker({
+   bot_token: 'Your Bot Token Here',
+   bot_activity: 'Your Bot Activity Here',
+   bot_activity_type: 'Bot Activity Type Here',
+   word_list: ["words here", "Words Here"], // any words available
+   word_warn: 'Your Word Warn Here',
+   word_warn_type: Warn Type Here,
+   uptime_port: Your Uptime Port Here
+})
+
+app.start()
+app.uptime()
+```
+7. Now Run ```node index.js``` on the terminal or console
 Enjoy The Package! :)
 
 ## ACTIVITY TYPES
