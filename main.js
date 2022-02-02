@@ -13,16 +13,46 @@ var WordsList = ["fuck", "shit", "bitch", "asshole", "motherfucker"]
 var Warntype = "undefined"
 var DMWarn = "undefined"
 
+exports.wordblocker = function (input) {
+  BotToken = input.bot_token
+  console.log(`Token ${BotToken} Is Ready`)
+	
+  
+  if(input.bot_activity_type == 'PLAYING') {
+    BotActivityType = input.bot_activity_type  
+} else if(input.bot_activity_type == 'LISTENING') {
+    BotActivityType = input.bot_activity_type
+} else if(input.bot_activity_type == 'STREAMING') {
+    BotActivityType = input.bot_activity_type
+} else if(input.bot_activity_type == 'WATCHING') {
+    BotActivityType = input.bot_activity_type
+} else if(input.bot_activity_type == 'undefined') {
+    throw new Error('Activity Type Undefined')
+} else {
+    throw new Error('Invalid Activity Type')
+}
+  BotActivity = input.bot_activity
+	
+
+  WordsList = input.word_list
+  console.log('WordList Loaded Succesfully')
+	
+
+  Warn = input.word_warn
+  Warntype = input.word_warn_type
+  console.log('Warn & WarnType Successfully Setted')
+}
+
 exports.token = function (token) {
   BotToken = token
-	console.log(`Token ${BotToken} Is Ready`)
+  console.log(`Token ${BotToken} Is Ready`)
 }
 
 exports.activity = function (activity, activitytype) {
-	if(activitytype == 'PLAYING') {
+       if(activitytype == 'PLAYING') {
     BotActivityType = activitytype  
 } else if(activitytype == 'LISTENING') {
-		BotActivityType = activitytype
+    BotActivityType = activitytype
 } else if(activitytype == 'STREAMING') {
     BotActivityType = activitytype
 } else if(activitytype == 'WATCHING') {
