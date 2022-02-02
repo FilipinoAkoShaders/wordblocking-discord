@@ -81,8 +81,7 @@ app.wordblocker({
 app.start()
 app.uptime()
 ```
-7. Now Run ```node index.js``` on the terminal or console
-Enjoy The Package! :)
+7. Now Run ```node index.js``` on the terminal or console, Enjoy The Package! :)
 
 ## ACTIVITY TYPES
 ```
