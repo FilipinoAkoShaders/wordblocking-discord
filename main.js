@@ -175,5 +175,5 @@ exports.uptime = function () {
     server.all('/', (req, res)=>{
     res.send(`Uptimer Now Ready! Bot Username ${client.user.tag}`)
 })
-    server.listen(UptimePort, ()=>{console.log(`Uptime Server Now Ready.. Listening To http://localhost:${UptimePort}`)});
+    server.listen(UptimePort, ()=>{console.log(`Uptime Server Now Ready. Listening To http://localhost:${UptimePort}`)});
 }
