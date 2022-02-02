@@ -9,8 +9,11 @@
 
 ## USEFULL LINKS
 [Github Repo](https://github.com/FilipinoAkoShaders/wordblocking-discord/)
+
 [Replit Project](https://replit.com/@Filipinoako/wordblocking-discord)
+
 [Creator Youtube Channel](https://youtube.com/c/FilipinoAkoYT)
+
 [Discord Server](https://discord.gg/ymsDeHAMPY)
 
 ## INSTALLATION
@@ -25,7 +28,7 @@ You Can Now Custom Uptime Port
 
 ## SETUP
 
-1. Install The Module With ```npm i wordblocking-discord``` or ```yarn add wordblocking-discord```
+1. Install The Module
 2. Create **index.js** file
 3. Copy This Code In **index.js** file
 ```js
