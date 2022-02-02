@@ -7,60 +7,43 @@
 
 <h3 align=center>Block Words On Your Discord Server With This NPM Package</h3>
 
-## GITHUB
-[Check Our Github Link Here](https://github.com/FilipinoAkoShaders/wordblocking-discord/)
+## USEFULL LINKS
+[Github Repo](https://github.com/FilipinoAkoShaders/wordblocking-discord/)
+[Replit Project](https://replit.com/@Filipinoako/wordblocking-discord)
+[Creator Youtube Channel](https://youtube.com/c/FilipinoAkoYT)
+[Discord Server](https://discord.gg/ymsDeHAMPY)
 
 ## INSTALLATION
 ```npm install wordblocking-discord```
 or
 ```yarn add wordblocking-discord```
 
-## FUNCTIONS
-heres the functions bellow
-```js
-token('YourBotToken'): The Bot Token
-activity('YourBotActivity'): The Bot Activity
-words(): Your Words List That Gonna Be Blocked *this needs config.json so scroll down for the template*
-warn('YourWarnMessage'): Bot Warn Message
-dmwarn('YourDMWarnMessage'): Bot DM Warn Message
-start(): This Starts The Module
-uptime(): if your on replit you might need this
-```
+## UPDATE
+
+Setting Up Is Now Easier
+You Can Now Custom Uptime Port
 
 ## SETUP
 
-1. Install The Module
+1. Install The Module With ```npm i wordblocking-discord``` or ```yarn add wordblocking-discord```
 2. Create **index.js** file
-3. Edit **index.js** file with the functions from the top, the templates below
-
-
-## TEMPLATE
-• index.js:
+3. Copy This Code In **index.js** file
 ```js
 const app = require('wordblocking-discord')
-const config = require('./config.json')
 
-app.token(config.token)
-app.activity(config.activity, config.activitytype)
-app.words(config.wordlist)
-app.warn(config.warntype, config.warn)
-app.dmwarn(config.dm)
-app.start()
-app.uptime()
+app.wordblocker({
+   bot_token: 'Your Bot Token Here',
+   bot_activity: 'Your Bot Activity Here',
+   bot_activity_type: 'Bot Activity Type Here',
+   word_list: ["words here", "Words Here"], // any words available
+   word_warn: 'Your Word Warn Here',
+   word_warn_type: Warn Type Here,
+   uptime_port: Your Uptime Port Here
+})
 ```
-• config.json:
-```json
-{
-  "token": "YourBotToken",
-  "activity": "YourBotActivity",
-  "activitytype": "ActivityType",
-  "wordlist": ["badword1", "badword2", "badword3"],
-  "warn": "WarnMessage",
-  "warntype": "WarnType",
-  "dm": "DM Warn Message"
-}
-```
-
+4. Fill Out The Needed Values
+5. Now Run ```node index.js``` on the terminal or console
+Enjoy The Package! :)
 
 ## ACTIVITY TYPES
 ```
@@ -71,11 +54,7 @@ app.uptime()
 ```
 Note: Bot Activity Type Always Need To Be Capslock
 
-
 ## WARN TYPES
-
-New Update!!!
-
 ```
 1 - Deleting The Word And Warning The User
 2 - Only Replying To The Word
