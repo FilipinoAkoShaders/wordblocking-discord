@@ -18,12 +18,15 @@
 
 ## INSTALLATION
 ```npm install wordblocking-discord```
+
 or
+
 ```yarn add wordblocking-discord```
 
 ## UPDATE
 
 Setting Up Is Now Easier
+
 You Can Now Custom Uptime Port
 
 ## SETUP
